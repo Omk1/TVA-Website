@@ -1,11 +1,21 @@
 <!doctype html>
 <html>
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
 
 <head>
 <title>Teen Volunteering</title>
 <body>
 
 	<div>
+		<button class = "buttonA" onclick="document.getElementById('popup').style.display='block'">Add a job</button>
+			<div id = "popup">
+    			<button class = "hideA" onclick="document.getElementById('popup').style.display='none'">X</button>
+    			<br><b>Password</b>
+    			<input type="password" placeholder="Enter password" name="psw" required>
+    			<button> Submit </button>
+			</div>
 		<h1>April Jobs</h1>
 	</div>
 	<div>
@@ -15,6 +25,7 @@
 		body{
 			background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 		}
+		#popup{display:none; border:1px solid black; width: 30%; height: 45px; position: absolute; right: 0px;}
 		#popup1{display:none; border:1px solid black; width: 30%; height: 45px;}
 		#popup2{display:none; border:1px solid black; width: 30%; height: 45px;}
 		#popup3{display:none; border:1px solid black; width: 30%; height: 45px;}
@@ -24,34 +35,13 @@
 		#popup7{display:none; border:1px solid black; width: 28%; height: 45px;}
 		#popup8{display:none; border:1px solid black; width: 28%; height: 45px;}
 		#popup9{display:none; border:1px solid black; width: 28%; height: 45px;}
-		.button {
-			border-radius: 20px;
-			border: 2px solid #4CAF50;
-			background-color: #008CBA;
-		}
-		.button1{
-			border-radius: 20px;
-			border: 2px solid #4CAF50;
-			background-color: #008CBA;
-			position: absolute;
-			right: 850px;
-		}
-		.hide {
-			border-radius: 20px;
-			background-color: #FF0000;
-			position: absolute;
-			right: 854px;
-		}
-		.hide1 {
-			border-radius: 20px;
-			background-color: #FF0000;
-			position: absolute;
-			right: 905px;
-		}
-		.disabled {
-  			opacity: 0.6;
-  			cursor: not-allowed;
-		}
+		.button {border-radius: 20px; border: 2px solid #4CAF50; background-color: #008CBA;}
+		.buttonA {border-radius: 20px; position: absolute; right: 0px;}
+		.button1{border-radius: 20px; border: 2px solid #4CAF50; background-color: #008CBA; position: absolute; right: 850px;}
+		.hide {border-radius: 20px; background-color: #FF0000; position: absolute; right: 854px;}
+		.hideA{border-radius: 20px; background-color: #FF0000; position: absolute; right: 353px;}
+		.hide1 {border-radius: 20px; background-color: #FF0000; position: absolute; right: 905px;}
+		.disabled {opacity: 0.6; cursor: not-allowed;}
 	</style>
 
 
