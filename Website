@@ -1,13 +1,10 @@
 <!doctype html>
 <html>
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
-
 <head>
+	<script src = "noob.js"></script>
 <title>Teen Volunteering</title>
+<image src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/US-TennesseeValleyAuthority-Logo.svg/1200px-US-TennesseeValleyAuthority-Logo.svg.png" alt = "TVA logo" width = "340" height="160" class = "center">
 <body>
-
 	<div>
 		<button class = "buttonA" onclick="document.getElementById('popup').style.display='block'">Add a job</button>
 			<div id = "popup">
@@ -16,7 +13,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
     			<input type="password" placeholder="Enter password" name="psw" required>
     			<button> Submit </button>
 			</div>
-		<h1>April Jobs</h1>
+		<h1><u>April Jobs</u></h1>
 	</div>
 	<div>
 		<h3><b><u>Jobs for Children's Department: </u></b></h3>
@@ -42,20 +39,24 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 		.hideA{border-radius: 20px; background-color: #FF0000; position: absolute; right: 353px;}
 		.hide1 {border-radius: 20px; background-color: #FF0000; position: absolute; right: 905px;}
 		.disabled {opacity: 0.6; cursor: not-allowed;}
+		.center {display: block; margin-left: auto; margin-right: auto; width: 30%}
 	</style>
-
-
+	<script>
+	function submit(){
+		alert('Success!')	
+	}
+	</script>
 
 	<div>
 		<ol>
-			<li>Need volunteers to help with either crafts, games or a scavenger hunt for the Children's Spring Fling on Sat Apr 27 from 11-2:30  <b>ALL spots taken</b> <button class = "button" onclick="document.getElementById('popup1').style.display='block'"> Apply </button></li> 
+			<li>Need volunteers to help with either crafts, games or a scavenger hunt for the Children's Spring Fling on Sat Apr 27 from 11-2:30  <button class = "button" onclick="document.getElementById('popup1').style.display='block'"> Apply </button></li> 
 			<div id = "popup1">
 			    <label for="name"><b>Name</b></label>
-    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<input type="Name" id="userInput" placeholder="Enter Name" name="name" required>
     			<button class = "hide" onclick="document.getElementById('popup1').style.display='none'">X</button>
-    			<br><b>Email Adress</b>
+    			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
-    			<button> Submit </button>
+    			<button onclick = "submit();"> Submit </button>
 			</div>
 			<p></p>
 			<li>Need volunteers to facepaint for the Children's Spring Fling on Sat Apr 27 from 11-2:30  <b>ALL spots taken</b> <button class = "button" onclick="document.getElementById('popup2').style.display='block'"> Apply </button></li> 
@@ -63,7 +64,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide" onclick="document.getElementById('popup2').style.display='none'">X</button>
-      			<br><b>Email Adress</b>
+      			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -74,7 +75,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide" onclick="document.getElementById('popup3').style.display='none'">X</button>
-      			<br><b>Email Adress</b>
+      			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -93,7 +94,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide1" onclick="document.getElementById('popup4').style.display='none'">X</button>
-     			<br><b>Email Adress</b>
+     			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -102,7 +103,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide1" onclick="document.getElementById('popup5').style.display='none'">X</button>
-      			<br><b>Email Adress</b>
+      			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -111,7 +112,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide1" onclick="document.getElementById('popup6').style.display='none'">X</button>
-       			<br><b>Email Adress</b>
+       			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -120,7 +121,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide1" onclick="document.getElementById('popup7').style.display='none'">X</button>
-       			<br><b>Email Adress</b>
+       			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -129,7 +130,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide1" onclick="document.getElementById('popup8').style.display='none'">X</button>
-       			<br><b>Email Adress</b>
+       			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
@@ -138,7 +139,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
 			    <label for="name"><b>Name</b></label>
     			<input type="Name" placeholder="Enter Name" name="name" required>
     			<button class = "hide1" onclick="document.getElementById('popup9').style.display='none'">X</button>
-       			<br><b>Email Adress</b>
+       			<br><b>Email address</b>
     			<input type="Email" placeholder="Enter Email" name="Email" required>
     			<button> Submit </button>
 			</div>
