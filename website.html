@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<title>Teen Volunteering</title>
+<image src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/US-TennesseeValleyAuthority-Logo.svg/1200px-US-TennesseeValleyAuthority-Logo.svg.png" alt = "TVA logo" width = "340" height="160" class = "center">
+<body>
+	<div>
+		<button class = "buttonA" onclick="document.getElementById('popup').style.display='block'">Add a job</button>
+			<div id = "popup">
+    			<button class = "hideA" onclick="document.getElementById('popup').style.display='none'">X</button>
+    			<br><b>Password</b>
+    			<input type="password" placeholder="Enter password" name="psw" required>
+    			<button> Submit </button>
+			</div>
+		<h1><u>April Jobs</u></h1>
+	</div>
+	<div>
+		<h3><b><u>Jobs for Children's Department: </u></b></h3>
+	</div>
+	<style>
+		body{
+			background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+		}
+		#popup{display:none; border:1px solid black; width: 30%; height: 45px; position: absolute; right: 0px;}
+		#popup1{display:none; border:1px solid black; width: 30%; height: 45px; position: static;}
+		#popup2{display:none; border:1px solid black; width: 30%; height: 45px;}
+		#popup3{display:none; border:1px solid black; width: 30%; height: 45px;} 
+		#popup4{display:none; border:1px solid black; width: 28%; height: 45px;}
+		#popup5{display:none; border:1px solid black; width: 28%; height: 45px;}
+		#popup6{display:none; border:1px solid black; width: 28%; height: 45px;}
+		#popup7{display:none; border:1px solid black; width: 28%; height: 45px;}
+		#popup8{display:none; border:1px solid black; width: 28%; height: 45px;}
+		#popup9{display:none; border:1px solid black; width: 28%; height: 45px;}
+		.button {border-radius: 20px; border: 2px solid #4CAF50; background-color: #008CBA;}
+		.buttonA {border-radius: 20px; position: absolute; right: 0px;}
+		.button1{border-radius: 20px; border: 2px solid #4CAF50; background-color: #008CBA; position: absolute;}
+		.hide {border-radius: 20px; background-color: #FF0000; position: relative; left:50px;}
+		.hideA{border-radius: 20px; background-color: #FF0000; position: absolute;}
+		.hide1 {border-radius: 20px; background-color: #FF0000; position: absolute;}
+		.disabled {opacity: 0.6; cursor: not-allowed;}
+		.center {display: block; margin-left: auto; margin-right: auto; width: 30%}
+	</style>
+	<script>
+		function check(){
+			var string = emailInput;
+			console.log(string.indexOf("@")!=-1);
+		}
+	</script>
+
+
+	<div>
+		<ol>
+			<li>Need volunteers to help with either crafts, games or a scavenger hunt for the Children's Spring Fling on Sat Apr 27 from 11-2:30  <button class = "button" onclick="document.getElementById('popup1').style.display='block'"> Apply </button></li> 
+			<div id = "popup1">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" id="userInput" placeholder="Enter Name" name="name" required>
+    			<button class = "hide" onclick="document.getElementById('popup1').style.display='none'">X</button>
+    			<br><b>Email address</b>
+    			<input type="Email" id="emailInput" placeholder="Enter Email" name="Email" required>
+    			<button onclick = "check();"> Submit </button>
+			</div>
+			<p></p>
+			<li>Need volunteers to facepaint for the Children's Spring Fling on Sat Apr 27 from 11-2:30  <b>ALL spots taken</b> <button class = "button" onclick="document.getElementById('popup2').style.display='block'"> Apply </button></li> 
+			<div id = "popup2">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide" onclick="document.getElementById('popup2').style.display='none'">X</button>
+      			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+			<p></p>
+			<li>Need volunteers to do craft preparations for the Children's Spring Fling.    Dates would be either every Monday or Wednesday from Apr 1-Apr 25 from 6-8 pm.   You can work all of the dates or just some; you have to commit to at least 2 of them.  Training for the crafts will be provided at the time of the volunteering. 
+			<b>ALL spots taken</b> <button class = "button" onclick="document.getElementById('popup3').style.display='block'"> Apply </button></li>
+			<div id = "popup3">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide" onclick="document.getElementById('popup3').style.display='none'">X</button>
+      			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+		</ol>
+	</div>
+
+	<div>
+		<h3><u><b>Misc Jobs: </b></u></h3>
+	</div>
+	<div>
+		<b>Need volunteers to package holds for delivery from April 8 until June 16.  You may only volunteer for one day a week and are expected to work that day for the entirety of the commitment (Apr-June).  </b>
+	</div>
+	<div>
+		<li>Sundays 2-4pm <button class = "button1" onclick="document.getElementById('popup4').style.display='block'"> Apply </button></li>
+			<div id = "popup4">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide1" onclick="document.getElementById('popup4').style.display='none'">X</button>
+     			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+		<br><li>Mondays 3:30 or 4 until 5 or 5:30pm  <b>FILLED</b> <button class = "button1" onclick="document.getElementById('popup5').style.display='block'"> Apply </button></li>
+			<div id = "popup5">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide1" onclick="document.getElementById('popup5').style.display='none'">X</button>
+      			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+		<br><li>Tuesdays 3:30 or 4 until 5 or 5:30pm  <b>FILLED</b>  <button class = "button1" onclick="document.getElementById('popup6').style.display='block'"> Apply </button></li>
+			<div id = "popup6">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide1" onclick="document.getElementById('popup6').style.display='none'">X</button>
+       			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+		<br><li>Wednesdays 3:30 or 4 until 5 or 5:30pm <b>FILLED</b> <button class = "button1" onclick="document.getElementById('popup7').style.display='block'"> Apply </button></li>
+			<div id = "popup7">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide1" onclick="document.getElementById('popup7').style.display='none'">X</button>
+       			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+		<br><li>Thursdays 3:30 or 4 until 5 or 5:30pm  <b>FILLED</b> <button class = "button1" onclick="document.getElementById('popup8').style.display='block'"> Apply </button></li>
+			<div id = "popup8">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide1" onclick="document.getElementById('popup8').style.display='none'">X</button>
+       			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+		<br><li>Fridays 3:30 or 4 until 5 or 5:30pm  <b>FILLED</b>   <button class = "button1" onclick="document.getElementById('popup9').style.display='block'"> Apply </button></li>
+			<div id = "popup9">
+			    <label for="name"><b>Name</b></label>
+    			<input type="Name" placeholder="Enter Name" name="name" required>
+    			<button class = "hide1" onclick="document.getElementById('popup9').style.display='none'">X</button>
+       			<br><b>Email address</b>
+    			<input type="Email" placeholder="Enter Email" name="Email" required>
+    			<button> Submit </button>
+			</div>
+	</div>
+	<div>
+		<p><b><em><br>As with all jobs, apply on this website with which jobs you would like (DO NOT JUST SHOW UP!).  She will respond to you as quickly as possible and let you know whether or not you got the job. <br><br>Email for Saleena is now sbplteenvolunteers@gmail.com.  Thank you for volunteering at the Library!  Remember, you cannot volunteer if you don't have a current application on file.</em></b></p>
+	</div>
+</body>
+</html>
